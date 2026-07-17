@@ -1,0 +1,64 @@
+.message-wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.user-wrapper {
+  justify-content: flex-end;
+}
+
+.ai-wrapper {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 75%;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.user-bubble {
+  background-color: var(--primary-color);
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+.ai-bubble {
+  background-color: #fdfdfd;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-bottom-left-radius: 2px;
+}
+
+.persona-header {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.25rem;
+}
+
+.persona-header.maya { color: #FF6B35; border-bottom-color: #FF6B35; } /* Signal Orange */
+.persona-header.vibhishana { color: #00c853; border-bottom-color: #00c853; } /* Green */
+.persona-header.kubera { color: #2A1B5E; border-bottom-color: #2A1B5E; } /* Deep Indigo */
+.persona-header.default { color: #555; }
+
+/* Markdown Styles */
+.markdown-body p {
+  margin: 0 0 0.75rem 0;
+}
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+.markdown-body strong {
+  font-weight: 700;
+  color: inherit;
+}
